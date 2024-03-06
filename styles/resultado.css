@@ -1,0 +1,33 @@
+.collapsible {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    font-family: "Concert One", sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: var(--cor-clara);
+    color: var(--cor-preto);
+  }
+  
+  .content {
+    padding: 1rem 2rem;
+    display: none;
+    overflow: hidden;
+    background-color: var(--cor-branca);
+  }
+
+  h3 {
+    font-family: "Concert One", sans-serif;
+    color: var(--cor-branca);
+    font-size: 1.8rem;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }

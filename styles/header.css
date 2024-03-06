@@ -1,0 +1,82 @@
+/* Design do cabeçalho */
+
+.cabecalho__menu__imagem {
+    width: 3em;
+    height: 3em;
+    scale: 0.7;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    padding: 0.5rem 0rem;
+    background-color: var(--cor-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+}
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 20vw;
+    background-color: var(--cor-header);
+}
+
+.cabecalho__menu__bt:checked~.lista_menu {
+    display: block;
+}
+
+.cabecalho__menu__imagem:hover {
+    animation: rotateanim 1s;
+}
+
+
+@keyframes rotateanim {
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(180deg);
+      }
+   }
+   
+
+.lista_menu__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;   
+    color: var(--cor-preto);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista_menu__titulo:hover {
+    color: var(--cor-branca);
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.lista_menu__item { 
+    padding: 0.7em;
+}
+
+.cabecalho__menu__bt {
+    display: none;
+}
+
+.cabecalho__logo__imagem{
+    width: 7rem;
+    height: auto;
+}
+
+

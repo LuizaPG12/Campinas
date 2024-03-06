@@ -1,0 +1,66 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.div__formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 36rem;  
+    padding: 8rem;
+    background: var(--cor-amarelo-escuro);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0em 0em 2em 0em;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+h2{
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+select{
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family: "Concert One", sans-serif;
+}
+
+.bt_form{
+    font-family: "Concert One", sans-serif;
+    color: var(--cor-branca);
+    padding: 0.4rem 0.3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--cor-botao);
+    border: 0.1rem solid black;
+}
+
+.bt_form:hover {
+    background: var(--cor-amarelo-hover);
+}
+
+#pontuacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10rem;
+    height: 6rem;  
+    padding: 2rem;
+    background: var(--cor-clara);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0em 0em 2em 0em;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}

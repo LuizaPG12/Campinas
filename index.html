@@ -1,0 +1,64 @@
+<!-- Código HTML site -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMPINAS + SAUDÁVEL</title>
+  <link rel="icon" type="image/png" href="img/logo2.png" />
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho__menu">
+        <div>
+            <input type="checkbox" id="menu" class="cabecalho__menu__bt">
+            <label for="menu" class="menu__img">
+                <span class="cabecalho__menu__imagem"></span>
+            </label>
+            <ul class="lista_menu">
+                <li class="lista_menu__item">
+                    <a class="lista_menu__titulo" href="index.html">Início</a>
+                </li>
+                <li class="lista_menu__item">
+                    <a class="lista_menu__titulo" href="resultado.html">Dados Gerais</a>
+                </li>
+                <li class="lista_menu__item">
+                    <a class="lista_menu__titulo" href="teste.html">Investigação de Sintoma</a>
+                </li>
+                <li class="lista_menu__item">
+                    <a class="lista_menu__titulo" href="sobre.html">Saiba Mais</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img class="cabecalho__logo__imagem" src="img/logo2.png" alt="Logo">
+        </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <br><br><br><br><h1 class="page-title">
+      CAMPINAS MAIS SAUDÁVEL
+    </h1>
+
+    <p class="page-subtitle">
+      <b>Selecione algum dos botões abaixo.<b>
+    </p><br><br>
+    <div class="bt_class">
+      <button class="bt_converter" onclick="window.location.href='resultado.html';">Dados Gerais</button><br><br>
+      <button class="bt_converter2" onclick="window.location.href='teste.html';">Teste Aqui</button><br><br>
+      <button class="bt_converter3" onclick="window.location.href='sobre.html';">Saiba Mais</button><br><br>
+    </div>
+    <footer>
+      <br><br><br><br><br><br><br><br><br><br>
+      <p class="footer">Desenvolvido por Luiza12.</p><br>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>

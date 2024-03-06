@@ -1,0 +1,107 @@
+/* Importando a fonte do Google Fonts */
+/* Conversão: 1 rem = 16 px */
+
+@import url("header.css");
+@import url("form.css");
+@import url("resultado.css");
+@import url("sobre.css");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+:root {
+  --cor-branca: #FFF;
+  --cor-amarelo-escuro: #E9A276;
+  --cor-amarelo-hover: #EBB18B;
+  --cor-azul: #6D6890;
+  --cor-botao: #D86D46;
+  --cor-preto: #000000;
+  --cor-clara: #D7DD9F; 
+  --cor-header: #FFA395;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Concert One", sans-serif;
+  min-height: 600px;
+  background-image: url("../img/banner.jpg");
+  background-repeat: repeat-y;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  font-family: "Concert One", sans-serif;
+  color: var(--cor-branca);
+  font-size: 2.8rem;
+  margin: 3rem 0 2rem 0;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: var(--cor-preto);
+  margin-top: 0.5rem;
+}
+
+footer {
+  font-size: 0.7rem;
+  color:  var(--cor-preto);
+  text-align: center;
+  font-family: cursive;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin: 0 0 5rem 0;
+}
+
+footer:hover {
+  font-size: 0.8rem;
+}
+
+.bt_converter {
+  font-family: "Concert One", sans-serif;
+  color: var(--cor-branca);
+  padding: 2rem 3.6rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: url("../img/1.png");
+  border: 0.1rem solid black;
+}
+
+.bt_converter:hover {
+  background: var(--cor-amarelo-hover);
+}
+
+.bt_converter2 {
+  font-family: "Concert One", sans-serif;
+  color: var(--cor-branca);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: url("../img/2.png");
+  border: 0.1rem solid black;
+}
+
+.bt_converter2:hover {
+  background: var(--cor-amarelo-hover);
+}
+
+.bt_converter3 {
+  font-family: "Concert One", sans-serif;
+  color: var(--cor-branca);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: url("../img/3.png");
+  border: 0.1rem solid black;
+}
+
+.bt_converter3:hover {
+  background: var(--cor-amarelo-hover);
+}
+

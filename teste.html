@@ -1,0 +1,130 @@
+<!-- Código HTML site -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMPINAS + SAUDÁVEL</title>
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="img/logo2.png" />
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__menu">
+            <div>
+                <input type="checkbox" id="menu" class="cabecalho__menu__bt">
+                <label for="menu" class="menu__img">
+                    <span class="cabecalho__menu__imagem"></span>
+                </label>
+                <ul class="lista_menu">
+                    <li class="lista_menu__item">
+                        <a class="lista_menu__titulo" href="index.html">Início</a>
+                    </li>
+                    <li class="lista_menu__item">
+                        <a class="lista_menu__titulo" href="resultado.html">Dados Gerais</a>
+                    </li>
+                    <li class="lista_menu__item">
+                        <a class="lista_menu__titulo" href="teste.html">Investigação de Sintoma</a>
+                    </li>
+                    <li class="lista_menu__item">
+                        <a class="lista_menu__titulo" href="sobre.html">Saiba Mais</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img class="cabecalho__logo__imagem" src="img/logo2.png" alt="Logo">
+            </div>
+        </div>
+      </header>
+
+    <div class="formulario">
+        <br><br><h2>Responda as perguntas abaixo e selecione enviar ao final.</h2><br><br>
+        <div class="div__formulario">
+            <form id="Form">
+                <label for="Febre">Está ou sentiu febre recentemente?</label><br><br>
+                <select name="Febre" id="Febre">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Dor">Está ou sentiu dor no corpo recentemente?</label><br><br>
+                <select name="Dor" id="Dor">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Mal">Está ou sentiu mal-estar recentemente?</label><br><br>
+                <select name="Mal" id="Mal">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Vomito">Está ou vomitou recentemente?</label><br><br>
+                <select name="Vomito" id="Vomito">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Diarreia">Está ou teve diarreia recentemente?</label><br><br>
+                <select name="Diarreia" id="Diarreia">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Enjoo">Está ou teve enjoo recentemente?</label><br><br>
+                <select name="Enjoo" id="Enjoo">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Coriza">Está ou teve coriza recentemente?</label><br><br>
+                <select name="Coriza" id="Coriza">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Ar">Está ou teve falta de ar recentemente?</label><br><br>
+                <select name="Ar" id="Ar">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Tosse">Está ou tossiu recentemente?</label><br><br>
+                <select name="Tosse" id="Tosse">
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select><br><br>
+                <label for="Regiao">Você mora em qual região de Campinas?</label><br><br>
+                <select name="Regiao" id="Regiao">
+                    <option value="Americana">Americana</option>
+                    <option value="Artur Nogueira">Artur Nogueira</option>
+                    <option value="Campinas">Campinas</option>
+                    <option value="Cosmópolis">Cosmópolis</option>
+                    <option value="Engenheiro Coelho">Engenheiro Coelho</option>
+                    <option value="Holambra">Holambra</option>
+                    <option value="Hortolândia">Hortolândia</option>
+                    <option value="Indaiatuba">Indaiatuba</option>
+                    <option value="Itatiba">Itatiba</option>
+                    <option value="Jaguariúna">Jaguariúna</option>
+                    <option value="Monte Mor">Monte Mor</option>
+                    <option value="Morungaba">Morungaba</option>
+                    <option value="Nova Odessa">Nova Odessa</option>
+                    <option value="Paulínia">Paulínia</option>
+                    <option value="Pedreira">Pedreira</option>
+                    <option value="Santa Bárbara D'Oeste">Santa Bárbara D'Oeste</option>
+                    <option value="Santo Antônio da Posse">Santo Antônio da Posse</option>
+                    <option value="Sumaré">Sumaré</option>
+                    <option value="Valinhos">Valinhos</option>
+                    <option value="Vinhedo">Vinhedo</option>
+                </select><br><br>
+                <button class="bt_form" type="submit">Enviar</button>
+            </form>
+            <br><div id="response"></div>
+        </div>
+        <div id="pontuacao"></div>
+    </div>
+    <footer>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <p class="footer">Desenvolvido por Luiza12.</p><br>
+    </footer>
+  </div>
+  <script src="code/script.js"></script>
+</body>
